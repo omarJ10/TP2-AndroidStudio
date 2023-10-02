@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_alignBaseline="@id/name"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/name"
+        android:text="Poids:"
+        android:textColor="#E60D0D" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:hint="Poids" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="48dp"
+        android:layout_height="31dp"
+        android:layout_alignBaseline="@id/name2"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@+id/name"
+        android:text="Taille:"
+        android:textColor="#E60D0D" />
+
+    <EditText
+        android:id="@+id/name2"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:hint="Taille" />
+
+    <Button
+        android:layout_width="179dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/radioButton1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="198dp"
+        android:text="CALCULER L'IMC" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@+id/radioButton1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="90dp"
+        android:text="Raz" />
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/name2"
+        android:layout_height="wrap_content"
+        android:text="Metre" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name2"
+        android:layout_alignLeft="@+id/radioButton1"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="1dp"
+        android:text="Centimetre" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton1"
+        android:layout_marginTop="73dp"
+        android:hint="Resultat:\nVous devez cliquer sur le bouton <<Caculer L'IMC>> pour obtenir un resultat" />
+
+
+</RelativeLayout>
